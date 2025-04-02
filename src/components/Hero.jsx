@@ -1,7 +1,19 @@
-import { Link } from "react-scroll";
-import heroImage from "../assets/hero-image.png"; // Ensure you have an image in assets folder
+import { useState } from "react";
+import heroImage from "../assets/hero-image.png";
 
-const Hero = () => {
+const Hero = ({ startAssistant, stopAssistant }) => {
+  const [isAssistantActive, setIsAssistantActive] = useState(false);
+
+  const handleStartAssistant = () => {
+    startAssistant();
+    setIsAssistantActive(true); // Show "Stop AI Assistant" button
+  };
+
+  const handleStopAssistant = () => {
+    stopAssistant();
+    setIsAssistantActive(false); // Show "Talk to AI Assistant" button
+  };
+
   return (
     <section
       id="home"
@@ -20,13 +32,30 @@ const Hero = () => {
             I create visually appealing and highly functional web applications
             with React.js.
           </p>
-          <a
-            href="/resume.pdf" // Ensure the resume file is in public folder
-            download
-            className="bg-[#F9A826] text-white px-6 py-3 rounded-lg font-medium text-lg cursor-pointer transition hover:bg-[#D9822B] shadow-md transform hover:scale-105 duration-300"
-          >
-            Download Resume
-          </a>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <a
+              href="/resume.pdf"
+              download
+              className="bg-[#F9A826] text-white px-6 py-3 rounded-lg font-medium text-lg cursor-pointer transition hover:bg-[#D9822B] shadow-md transform hover:scale-105 duration-300"
+            >
+              Download Resume
+            </a>
+            {!isAssistantActive ? (
+              <button
+                onClick={handleStartAssistant}
+                className="bg-blue-500 text-white px-6 py-3 rounded-lg font-medium text-lg cursor-pointer transition hover:bg-blue-700 shadow-md transform hover:scale-105 duration-300"
+              >
+                Talk to AI Assistant
+              </button>
+            ) : (
+              <button
+                onClick={handleStopAssistant}
+                className="bg-red-500 text-white px-6 py-3 rounded-lg font-medium text-lg cursor-pointer transition hover:bg-red-700 shadow-md transform hover:scale-105 duration-300"
+              >
+                Stop AI Assistant
+              </button>
+            )}
+          </div>
         </div>
 
         {/* Right Content - Responsive Image Styling */}
