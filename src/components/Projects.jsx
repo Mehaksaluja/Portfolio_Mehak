@@ -1,27 +1,29 @@
 import React from "react";
+import growth_magnet from "../assets/growth-magnet.png";
+import portfolio from "../assets/portfolio.png";
 
 const projects = [
   {
-    title: "Portfolio Website",
+    title: "AI Portfolio Website",
     description:
-      "A personal portfolio website to showcase my skills and projects.",
-    techStack: ["React.js", "Tailwind CSS"],
-    liveLink: "#",
-    githubLink: "#",
-    image: "portfolio.jpg",
+      "A personal portfolio website to showcase my skills and projects including AI Voice Assistant.",
+    techStack: ["React.js", "Tailwind CSS", "AI"],
+    liveLink: "https://portfoliomehak.vercel.app/",
+    githubLink: "https://github.com/Mehaksaluja/Portfolio_Mehak",
+    image: portfolio,
   },
   {
-    title: "E-commerce Platform",
-    description: "A modern e-commerce platform with seamless UI/UX.",
-    techStack: ["React.js", "Redux", "Firebase"],
-    liveLink: "#",
-    githubLink: "#",
-    image: "ecommerce.jpg",
+    title: "Agency Website",
+    description: "A social media agency website with seamless UI/UX.",
+    techStack: ["React.js", "HTML", "CSS"],
+    liveLink: "https://growth-magnet.netlify.app/",
+    githubLink: "https://github.com/Mehaksaluja/Growth-Magnet",
+    image: growth_magnet,
   },
   {
-    title: "Weather App",
-    description: "A weather forecasting app fetching real-time data.",
-    techStack: ["JavaScript", "API", "CSS"],
+    title: "Coming Soon",
+    description: "Coming Soon",
+    techStack: ["soon"],
     liveLink: "#",
     githubLink: "#",
     image: "weather.jpg",

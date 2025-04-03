@@ -1,5 +1,13 @@
 import { useState } from "react";
-import { FaUser, FaEnvelope, FaPhone, FaPaperPlane } from "react-icons/fa";
+import {
+  FaUser,
+  FaEnvelope,
+  FaPhone,
+  FaPaperPlane,
+  FaLinkedin,
+  FaGithub,
+  FaTwitter,
+} from "react-icons/fa";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -39,6 +47,32 @@ const Contact = () => {
             <p className="flex items-center gap-2">
               <FaPhone /> +123 456 7890
             </p>
+            <div className="flex gap-4 mt-4">
+              <a
+                href="https://www.linkedin.com/in/mehak-saluja/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#F9A826] hover:text-white transition"
+              >
+                <FaLinkedin size={24} />
+              </a>
+              <a
+                href="https://github.com/Mehaksaluja"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#F9A826] hover:text-white transition"
+              >
+                <FaGithub size={24} />
+              </a>
+              <a
+                href="https://x.com/salujamehak5"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#F9A826] hover:text-white transition"
+              >
+                <FaTwitter size={24} />
+              </a>
+            </div>
           </div>
 
           {/* Divider Line */}
