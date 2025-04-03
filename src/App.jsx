@@ -12,6 +12,8 @@ function App() {
   const [started, setStarted] = useState(false);
   const [assistantIsSpeaking, setAssistantIsSpeaking] = useState(false);
   const [volumeLevel, setVolumeLevel] = useState(0);
+  const [loading, setLoading] = useState(false);
+  const [callId, setCallId] = useState();
 
   useEffect(() => {
     vapi
