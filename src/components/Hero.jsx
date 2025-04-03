@@ -26,11 +26,11 @@ const Hero = ({ startAssistant, stopAssistant }) => {
             Hi, I'm Mehak Saluja
           </h1>
           <h2 className="text-lg sm:text-xl md:text-2xl font-medium text-[#F9A826] mb-6">
-            Frontend Developer
+            AI Developer
           </h2>
           <p className="text-base sm:text-lg text-gray-300 mb-6">
             I create visually appealing and highly functional web applications
-            with React.js.
+            using my Web Dev Skills and AI.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
