@@ -20,14 +20,6 @@ const projects = [
     githubLink: "https://github.com/Mehaksaluja/Growth-Magnet",
     image: growth_magnet,
   },
-  {
-    title: "Coming Soon",
-    description: "Coming Soon",
-    techStack: ["soon"],
-    liveLink: "#",
-    githubLink: "#",
-    image: "weather.jpg",
-  },
 ];
 
 const Projects = () => {
@@ -38,7 +30,7 @@ const Projects = () => {
     >
       <h2 className="text-3xl font-bold text-[#F9A826] mb-8">Projects</h2>
 
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-6">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 px-6">
         {projects.map((project, index) => (
           <div
             key={index}

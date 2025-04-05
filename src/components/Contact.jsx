@@ -42,10 +42,10 @@ const Contact = () => {
               Feel free to reach out to me for any inquiries or collaborations.
             </p>
             <p className="flex items-center gap-2">
-              <FaEnvelope /> example@email.com
+              <FaEnvelope /> salujamehak05@gmail.com
             </p>
             <p className="flex items-center gap-2">
-              <FaPhone /> +123 456 7890
+              <FaPhone /> +91-7404362531
             </p>
             <div className="flex gap-4 mt-4">
               <a
