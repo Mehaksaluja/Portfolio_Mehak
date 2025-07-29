@@ -9,7 +9,7 @@ const projects = [
       "A personal portfolio website to showcase my skills and projects including AI Voice Assistant.",
     techStack: ["React.js", "Tailwind CSS", "AI"],
     liveLink: "https://portfoliomehak.vercel.app/",
-    // githubLink: "https://github.com/Mehaksaluja/Portfolio_Mehak",
+    githubLink: "#", //https://github.com/Mehaksaluja/Portfolio_Mehak
     image: portfolio,
   },
   {
@@ -17,7 +17,7 @@ const projects = [
     description: "A social media agency website with seamless UI/UX.",
     techStack: ["React.js", "HTML", "CSS"],
     liveLink: "https://growth-magnet.netlify.app/",
-    // githubLink: "https://github.com/Mehaksaluja/Growth-Magnet",
+    githubLink: "#", //https://github.com/Mehaksaluja/Growth-Magnet
     image: growth_magnet,
   },
 ];
